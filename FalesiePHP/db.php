@@ -1,10 +1,6 @@
 <?php
-    $host ="localhost";
-    $dbname ="falesia";
-    $username = "root";
-    $password = "";
 
-    $mysqli = new mysqli($host,$username, $password, $dbname);
+    $mysqli = new mysqli("peronnetwork.zapto.org","root", "root","ucas",3306);
 
     if(!$mysqli){
         die("Connessione al database fallita: " . $conn->connect_error);

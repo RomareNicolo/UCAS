@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <h1>Falesie di
+        <h1>Computer di
             <?php
             $mysqli = require __DIR__ . "/db.php";
             $id_utente = $mysqli->real_escape_string($_COOKIE["username"]);
@@ -45,7 +45,7 @@
     </nav>
 
     <section id="falesie-form-section">
-        <h2 style="text-align: center;">Aggiungi una nuova falesia</h2>
+        <h2 style="text-align: center;">Aggiungi un nuovo pc</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="falesia-name">Nome falesia:</label>
             <input type="text" name="falesia-name" required><br><br>
